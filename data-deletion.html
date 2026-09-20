@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunrise Stables — Data deletion request</title>
+  <style>
+    :root {
+      --bg: #1a120c;
+      --panel: #2a1c14;
+      --ink: #f7f1e3;
+      --muted: #d9c8b4;
+      --accent: #e9c46a;
+      --line: #c4a882;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Palatino Linotype", Palatino, serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1, h2 { font-weight: 700; color: var(--accent); }
+    h1 { font-size: 1.85rem; margin-bottom: 0.35rem; }
+    .sub { color: var(--muted); margin-bottom: 2rem; }
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.15rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    a { color: var(--accent); }
+    ol { padding-left: 1.2rem; }
+    code, .id {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.92em;
+      background: #1a120c;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: var(--accent);
+      color: #3a2412;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.7rem 1.1rem;
+      border-radius: 10px;
+    }
+    footer { color: var(--muted); font-size: 0.9rem; margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Data deletion request</h1>
+    <p class="sub">Sunrise Stables (<code>com.stanisi.sunrisestables</code>)</p>
+
+    <section>
+      <h2>What this is</h2>
+      <p>
+        Use this page to ask us to delete analytics and related game data tied to your copy of Sunrise Stables.
+        This is free. We will confirm by email when the request is complete, usually within 30 days.
+      </p>
+    </section>
+
+    <section>
+      <h2>What we can delete</h2>
+      <ul>
+        <li><strong>GameAnalytics</strong> events and identifiers for your in-app User ID (gameplay, progression, resource events).</li>
+        <li><strong>Cloud save</strong> we stored via Google Play Games (progress snapshot named for Sunrise Stables), if we can match it to your request.</li>
+      </ul>
+      <p>We cannot erase, from this form:</p>
+      <ul>
+        <li>Google Play purchase records (those stay with Google).</li>
+        <li>Your Google account itself, or Play Games profile — manage those in your Google Account.</li>
+        <li>The copy of the game still on your device until you uninstall it (local save lives on the phone).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to request deletion</h2>
+      <ol>
+        <li>Open Sunrise Stables → Settings (gear) → copy the <strong>User ID</strong>.</li>
+        <li>Email us from an address we can reply to.</li>
+        <li>Use the subject <span class="id">Sunrise Stables data deletion</span>.</li>
+        <li>Paste the User ID. Optional: Google account email if you used Play Games sign-in / cloud save, and whether you also want cloud save removed.</li>
+      </ol>
+      <!-- Replace the href email with your real inbox before publishing. -->
+      <p>
+        <a class="cta" href="mailto:REPLACE_WITH_YOUR_EMAIL?subject=Sunrise%20Stables%20data%20deletion">Email a deletion request</a>
+      </p>
+      <p>
+        If you cannot open the app, say so in the email and include the Google account you use on the Play Store.
+        We may ask one follow-up question so we do not delete the wrong player.
+      </p>
+    </section>
+
+    <section>
+      <h2>After you write</h2>
+      <p>
+        We will stop using that User ID for analytics where we control it, ask GameAnalytics to erase the corresponding records,
+        and delete our Play Games snapshot for this game if we can identify it.
+        Uninstall the app to clear the on-device save.
+      </p>
+    </section>
+
+    <footer>
+      Publisher: Stanislav (Sunrise Stables).<br>
+      Related: link your privacy policy URL here once it is live.
+    </footer>
+  </main>
+</body>
+</html>
